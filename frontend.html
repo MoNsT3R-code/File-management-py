@@ -1,0 +1,80 @@
+<div class="min-h-screen bg-slate-50 font-sans antialiased flex flex-col">
+  
+  <header class="bg-slate-900 border-b-4 border-amber-500 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 bg-emerald-700 rounded-full flex items-center justify-center text-amber-400 font-bold text-xl border border-amber-400">
+          AN
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight text-emerald-400">Al-Noor Islamic Academy</h1>
+          <p class="text-xs text-slate-400 font-mono">Student Management System v4.0</p>
+        </div>
+      </div>
+      <nav class="flex space-x-6 text-sm font-medium">
+        <a href="#dashboard" class="text-amber-400 border-b-2 border-amber-400 pb-1">Dashboard</a>
+        <a href="#hifz" class="text-slate-300 hover:text-emerald-400 transition-colors">Hifz Tracking</a>
+        <a href="#billing" class="text-slate-300 hover:text-emerald-400 transition-colors">Financial Ledger</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-7xl w-full mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5 space-y-4">
+      <div class="flex justify-between items-center border-b border-slate-100 pb-3">
+        <h3 class="text-base font-bold text-slate-800 flex items-center">
+          <span class="w-2 h-4 bg-emerald-600 rounded mr-2 inline-block"></span>
+          Daily Hifz Progress Metrics
+        </h3>
+        <span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 font-mono text-xs rounded-full font-bold">Active</span>
+      </div>
+      <div class="space-y-3 font-mono text-xs text-slate-600 bg-slate-50 p-4 rounded-lg border border-slate-100">
+        <p><strong class="text-slate-900">Sabak (New):</strong> Surah Al-Mulk [Aya 1 - 15]</p>
+        <p><strong class="text-slate-900">Sabki (Recent):</strong> Juz 29 [Fluency Match: 94.5%]</p>
+        <p><strong class="text-slate-900">Manzil (Distant):</strong> Juz 1 [Tajweed Grade: 98.0%]</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5 space-y-4">
+      <div class="flex justify-between items-center border-b border-slate-100 pb-3">
+        <h3 class="text-base font-bold text-slate-800 flex items-center">
+          <span class="w-2 h-4 bg-emerald-600 rounded mr-2 inline-block"></span>
+          Tarbiyah & Salah Attendance
+        </h3>
+        <span class="text-amber-600 text-xs font-serif font-bold">Updated Today</span>
+      </div>
+      <div class="grid grid-cols-5 gap-2 text-center text-xs font-bold">
+        <div class="p-2 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded">Fajr</div>
+        <div class="p-2 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded">Dhuhr</div>
+        <div class="p-2 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded">Asr</div>
+        <div class="p-2 bg-slate-100 border border-slate-200 text-slate-400 rounded">Maghrib</div>
+        <div class="p-2 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded">Isha</div>
+      </div>
+      <div class="pt-2 text-xs text-slate-500">
+        <span>Character Evaluation Score Balance: </span>
+        <span class="text-slate-900 font-mono font-bold">92 / 100</span>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-5 space-y-4">
+      <div class="flex justify-between items-center border-b border-slate-100 pb-3">
+        <h3 class="text-base font-bold text-slate-800 flex items-center">
+          <span class="w-2 h-4 bg-emerald-600 rounded mr-2 inline-block"></span>
+          Tuition Invoice Activity Status
+        </h3>
+        <span class="px-2 py-0.5 bg-amber-100 text-amber-800 font-mono text-xs rounded-full font-bold">Pending</span>
+      </div>
+      <div class="flex justify-between items-center p-3 bg-amber-50 rounded-lg border border-amber-100">
+        <div>
+          <span class="text-xs text-amber-800 block font-medium">Invoice Month: June 2026</span>
+          <span class="text-lg font-mono font-bold text-amber-900">PKR 4,500.00</span>
+        </div>
+        <button class="px-4 py-2 bg-amber-600 text-white font-bold text-xs rounded shadow-sm hover:bg-amber-700 transition-colors uppercase tracking-wider font-mono">
+          Pay Portal
+        </button>
+      </div>
+    </div>
+
+  </main>
+</div>
