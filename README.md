@@ -34,7 +34,7 @@ A multi-tenant, cloud-based educational resource planning (ERP) platform designe
 --- 
 
 ## 📦 System Architecture
-
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                       FRONTEND LAYER                        │
 ├──────────────────────────────┬──────────────────────────────┤
@@ -45,9 +45,9 @@ A multi-tenant, cloud-based educational resource planning (ERP) platform designe
 ┌─────────────────────────────────────────────────────────────┐
 │                     BACKEND PROCESSING                      │
 ├────────────┬─────────────┬────────────┬─────────────┬───────┤
-│ attendance │ finance.py  │metrices.py │  report.py  │file_io│
-│    .py     │ (Billing &  │ (Grading)  │  (Reports)  │_core.c│
-│(Attendance)│ Concession) │            │             │(Native)│
+│ attendance │ finance.py  │metrices.py │  report.py │file_io │
+│    .py     │ (Billing &  │ (Grading)  │  (Reports) │_core.c │
+│(Attendance)│ Concession) │            │            │(Native)│
 └──────────────────────────────┴──────────────────────────────┘
                                ↓
 ┌─────────────────────────────────────────────────────────────┐
@@ -58,7 +58,7 @@ A multi-tenant, cloud-based educational resource planning (ERP) platform designe
 │ │   RBAC   │ Academic  │ Financial │ Hifz/Tarbiyah │ Bio  │ │
 │ └──────────┴───────────┴───────────┴───────────────┴──────┘ │
 └─────────────────────────────────────────────────────────────┘
-
+```
 ---
 
 ## ✨ Key Features
