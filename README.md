@@ -208,7 +208,7 @@ python3 report.py
 ```
 
 
-|### 🎯 Islamic Education Features
+### 🎯 Islamic Education Features
 Hifz Tracking
 Monitor Quran memorization progress
 Track surah completion
