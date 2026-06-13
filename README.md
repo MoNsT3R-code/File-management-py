@@ -18,11 +18,46 @@ A multi-tenant, cloud-based educational resource planning (ERP) platform designe
 
 ---
 
+## 📍 Quick Navigation
+
+* [🌐 Engine Overview](#-engine-overview)
+* [📦 System Architecture](#-system-architecture)
+* [✨ Key Features](#-key-features)
+* [📁 Repository Structure](#-repository-structure-and-module-index)
+* [🛠️ Tech Stack](#️-tech-stack)
+* [💻 System Requirements](#-system-requirements)
+* [🚀 Deployment and Execution Guide](#-deployment-and-execution-guide)
+* [🏗️ Architectural Highlights](#%EF%B8%8F-architectural-highlights)
+* [🎯 Islamic Education Features](#-islamic-education-features)
+* [📄 License](#-license)
+
+--- 
+
 ## 📦 System Architecture
 
-┌─────────────────────────────────────────────────────────────┐ │ FRONTEND LAYER │ ├──────────────────────┬──────────────────────────────────────┤ │ frontend.html │ Management.js │ │ (UI Layout) │ (User Experience & API) │ └──────────────────────┴──────────────────────────────────────┘ ↓ ┌─────────────────────────────────────────────────────────────┐ │ BACKEND PROCESSING │ ├────────────┬─────────────┬──────────┬──────────┬────────────┤ │attendance. │ finance.py │metrics.py│report.py │file_io_ │ │py │ (Billing & │(Grading) │(Reports) │core.c │ │(Attendance)│ Concession) │ │ │(Performance) └────────────┴─────────────┴──────────┴──────────┴────────────┘ ↓ ┌─────────────────────────────────────────────────────────────┐ │ DATABASE LAYER │ ├──────────────────────────────────────────────────────────────┤ │ database.sql (MariaDB 10.5+ / PostgreSQL 14+) │ │ RBAC │ Academic │ Financial │ Hifz/Tarbiyah │ Biometric │ └──────────────────────────────────────────────────────────────┘
-
-
+┌─────────────────────────────────────────────────────────────┐
+│                       FRONTEND LAYER                        │
+├──────────────────────────────┬──────────────────────────────┤
+│        frontend.html         │        Management.js         │
+│         (UI Layout)          │   (User Experience & API)    │
+└──────────────────────────────┴──────────────────────────────┘
+                               ↓
+┌─────────────────────────────────────────────────────────────┐
+│                     BACKEND PROCESSING                      │
+├────────────┬─────────────┬────────────┬─────────────┬───────┤
+│ attendance │ finance.py  │metrices.py │  report.py  │file_io│
+│    .py     │ (Billing &  │ (Grading)  │  (Reports)  │_core.c│
+│(Attendance)│ Concession) │            │             │(Native)│
+└──────────────────────────────┴──────────────────────────────┘
+                               ↓
+┌─────────────────────────────────────────────────────────────┐
+│                       DATABASE LAYER                        │
+├─────────────────────────────────────────────────────────────┤
+│        database.sql (MariaDB 10.5+ / PostgreSQL 14+)        │
+│ ┌──────────┬───────────┬───────────┬───────────────┬──────┐ │
+│ │   RBAC   │ Academic  │ Financial │ Hifz/Tarbiyah │ Bio  │ │
+│ └──────────┴───────────┴───────────┴───────────────┴──────┘ │
+└─────────────────────────────────────────────────────────────┘
 
 ---
 
